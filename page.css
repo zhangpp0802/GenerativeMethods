@@ -1,0 +1,132 @@
+/* Background pattern from Toptal Subtle Patterns */
+body {
+  background-image: url("bg.jpg");
+  background-repeat: repeat;
+}
+
+
+h1 {
+	/*font-family: 'Lobster', cursive;*/
+	font-family: 'Comforter Brush', serif;
+	font-size: 30px;
+}
+h2, h3 {
+	/*font-family: 'Lobster', cursive;*/
+	font-family: 'Moon Dance', serif;
+	font-size: 20px;
+}
+
+#main {
+	padding: 20px;
+	margin: 0px auto;
+	max-width: 800px;
+	box-shadow: 1px 2px 5px hsla(0, 0, 0, .5);
+	border-radius: 10px;
+}
+
+
+.columns {
+	box-shadow: 1px 2px 5px black;
+	display: flex;
+	flex-direction: row;
+}
+
+.mylinks {
+	flex: 1;
+	margin: 5px;
+	width: 200px;
+	border-radius: 10px;
+	text-align: center;
+	border: 1px dashed rgba(0, 0, 0, .4);
+} 
+
+
+.minigame {
+	margin: 5px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.border {
+	padding: 10px;
+	border-radius: 10px;
+    background-image: linear-gradient(90deg, grey 50%, transparent 50%), linear-gradient(90deg, grey 50%, transparent 50%), linear-gradient(0deg, grey 50%, transparent 50%), linear-gradient(0deg, grey 50%, transparent 50%);
+    background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+    background-size: 8px 1px, 8px 1px, 1px 8px, 1px 8px;
+    background-position: left top, right bottom, left bottom, right top;
+    animation: border-dance 1s infinite linear;
+  }
+  @keyframes border-dance {
+    0% {
+      background-position: left top, right bottom, left bottom, right top;
+    }
+    100% {
+      background-position: left 15px top, right 15px bottom , left bottom 15px , right top 15px;
+    }
+  }
+}
+
+.log {
+	overflow: hidden;
+}
+
+.log-statement {
+	padding: 2px 3px;
+	display: inline-block;
+	margin: 4px;
+	box-shadow: 0px 1px 2px black;
+	background-color: hsla(150, 40%, 90%, 1);
+}
+
+.card { 
+	display: inline-block;
+	padding: 20px;
+	box-shadow: 1px 2px 5px black;
+	background-color: white;
+	margin: 5px;
+ }
+
+.column {
+	text-align: center;
+	box-shadow: 1px 2px 5px black;
+	flex-direction: row;
+	padding: 2px;
+}
+
+div.polaroid {
+	display: inline-block;
+	padding: 10px;
+	box-shadow: 1px 2px 5px black;
+	background-color: white;
+	margin: 5px;
+}
+
+.profile-pic img {
+	width: 100px;
+	object-position: center;
+	transition: all 500ms cubic-bezier(0.305, 0.035, 0.450, 1.650); /* custom */
+}
+
+.profile-pic img:hover {
+	width: 200px;
+	border: 3px red;
+	object-position: center;
+}
+
+.handwriting {
+	font-family: 'Permanent Marker', cursive;
+}
+
+.basic-info{
+	width: 650px;
+	padding: 5px;
+	/*border: 1px solid grey;*/
+	background-color: white;
+	text-align: left;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
