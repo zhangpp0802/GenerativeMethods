@@ -41,7 +41,7 @@ Vue.component("audio-player", {
 class AudioPlayer {
 	constructor() {
 		this.isInitialized = false
-		this.songPrefix = "../../../shared/music/" 
+		this.songPrefix = "../shared/music/" 
 		this.songs = ["203932__aptbr__lofi-guitar.wav",
 						"351717__monkeyman535__cool-chill-beat-loop.mp3",
 						"403372__emceeciscokid__chiptune-melody.wav",
